@@ -1,4 +1,5 @@
-﻿using System;
+﻿/* #region   */
+using System;
 using System.Collections.Generic;
 
 namespace EnemiesList
@@ -86,3 +87,5 @@ namespace EnemiesList
         public List<string> Offenses { get; set; }
     }
 }
+
+/* #endregion */

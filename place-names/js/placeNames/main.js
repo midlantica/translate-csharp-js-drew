@@ -14,7 +14,7 @@ function main() {
 
     console.log();
 
-    console.log("All The The Names");
+    console.log("All the 'The' Names");
     for (name of names) {
         if (name.startsWith("The")) {
             console.log(name)
