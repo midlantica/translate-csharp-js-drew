@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace WishList
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("My Wishes...");
+
+      string hello = "hello";
+
+      Console.WriteLine(hello);
+
+      string iWishFor = @"An original eight track of William Shatner's 'Lucy in the Sky with Diamonds', ";
+      iWishFor += @"The ability to think of interesting wishes on short notice, ";
+      iWishFor += @"A washtub of Skittles, ";
+      iWishFor += @"World peace, but not the kind of world peace where all the humans are removed from existence, ";
+      iWishFor += @"A TV that is NOT internet-capable, ";
+      iWishFor += @"The ability to fly, but, like, really fast...not just, like, how fast I can walk, but, like, fast, you know?";
+
+      Console.Write(iWishFor);
+    }
+  }
+}
