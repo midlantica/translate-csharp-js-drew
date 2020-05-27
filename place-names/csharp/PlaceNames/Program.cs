@@ -30,8 +30,8 @@ namespace PlaceNames
             //  Here we use that to add a little space around the output.
             Console.WriteLine();
 
-            // Filter the list to create a new list that only has 
-            //  place names that start with the word "The".
+            // Filter the list t            // Filter the list to create a new list that only has
+
             List<string> theNames = names.Where(n => n.StartsWith("The")).ToList();
 
             Console.WriteLine("'The' Place Names");

@@ -41,14 +41,24 @@ const main = () => {
     },
   ]
 
-  for (myEnemy in enemies) {
-    const first = enemies[myEnemy].FirstName
-    const last = enemies[myEnemy].LastName
+  for (const myEnemy of enemies) {
+    const first = myEnemy.FirstName
+    const last = myEnemy.LastName
     const fullName = `${first} ${last}`
-    if (enemies[myEnemy].IsReallyHated) {
-      console.log(fullName)
+    if (myEnemy.IsReallyHated) {
+      console.log(fullName + " is a rude person")
     }
   }
+
+  // for (myEnemy in enemies) {
+  //   const first = enemies[myEnemy].FirstName
+  //   const last = enemies[myEnemy].LastName
+  //   const fullName = `${first} ${last}`
+  //   if (enemies[myEnemy].IsReallyHated) {
+  //     console.log(fullName + " is a rude person")
+  //   }
+  // }
+
 }
 
 main()
