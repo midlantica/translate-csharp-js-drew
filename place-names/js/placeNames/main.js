@@ -2,8 +2,15 @@ function main() {
     // Put your code here
     console.log("Duuuuuuude!")
 
-    const names = ["Nashville", "Hong Kong", "The back yard", "Earth",
-        "London", "The mall", "Ryman Auditorium", "The Great Wall of China"
+  const names = [
+      "Nashville",
+      "Hong Kong",
+      "The back yard",
+      "Earth",
+      "London",
+      "The mall",
+      "Ryman Auditorium",
+      "The Great Wall of China"
     ]
 
     // Print some output to the terminal (aka. "Console");
