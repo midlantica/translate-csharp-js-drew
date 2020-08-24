@@ -1,58 +1,27 @@
-function main() {
-    // Put your code here
-    console.log("Duuuuuuude!")
+function main () {
 
-  const names = [
-      "Nashville",
-      "Hong Kong",
-      "The back yard",
-      "Earth",
-      "London",
-      "The mall",
-      "Ryman Auditorium",
-      "The Great Wall of China"
-    ]
-
-    // Print some output to the terminal (aka. "Console");
-    console.log("All Place Names");
-    for (name of names) {
-        console.log(name)
-    }
-
-    console.log();
-
-    console.log("All the 'The' Names");
-    for (name of names) {
-        if (name.startsWith("The")) {
-            console.log(name)
-        }
-
-  // Put your code here
   const names = [
     'Nashville',
-    'Hong Kong',
-    'The back yard',
-    'Earth',
     'London',
-    'The mall',
-    'Ryman Auditorium',
-    'The Great Wall of China',
+    'Hong Kong',
+    'Madrid',
+    'Rome',
+    'The Paris',
+    'The Athens',
+    'Berlin'
   ]
 
-  // Print some output to the terminal (aka. "Console");
-  console.log('All Place Names')
+  console.log('Array of names \n' + names)
+  let name = ''
+
+  console.log('\nAll City Names')
   for (name of names) {
     console.log(name)
   }
 
-  console.log()
-
-  console.log("All the 'The' Names")
-  for (name of names) {
-    if (name.startsWith('The')) {
-      console.log(name)
-    }
-  }
+  console.log('\nAll the \'The\' City Names')
+  const namage = names.filter(n => n.startsWith('The'))
+  console.log(namage)
 }
 
-main();
+main()
