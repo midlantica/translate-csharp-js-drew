@@ -13,6 +13,7 @@ trim_trailing_whitespace = true
 semi = false
 editor.formatOnSave = true
 requireConfig = true
+quote_type = double
 
 [*.md]
 insert_final_newline = false

@@ -6,12 +6,12 @@ function main() {
     "World peace, but not the kind of world peace where all the humans are removed from existence",
     "A TV that is NOT internet-capable",
     "The ability to fly, but, like, really fast...not just, like, how fast I can walk, but, like, fast, you know?"
-  ];
+  ]
 
-  console.log("My wishes...");
+  console.log("My wishes...")
   for (const wish of iWishFor) {
-    console.log(wish);
+    console.log(wish)
   }
 }
 
-main();
+main()

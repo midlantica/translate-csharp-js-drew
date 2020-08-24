@@ -7,28 +7,28 @@ function main() {
     "I'd rather walk than be on the same plane as you",
     "If I were given a million dollars to hang out with you...I would, but then I'd have to spend half of it on therapy",
     "Do you have to be so...like that?"
-  ];
+  ]
 
   // This code ensures we don't end up with duplicate insults
-  const indexes = [];
+  const indexes = []
   while (indexes.length < 3) {
-    const candidate = getRandomInt(0, insults.length - 1);
+    const candidate = getRandomInt(0, insults.length - 1)
     if (!indexes.includes(candidate)) {
-      indexes.push(candidate);
+      indexes.push(candidate)
     }
   }
 
-  for (let i=0; i<indexes.length; i++) {
-    const index = indexes[i];
-    console.log(insults[index]);
+  for (let i = 0; i < indexes.length; i++) {
+    const index = indexes[i]
+    console.log(insults[index])
   }
 }
 
 // Remember getting a random integer in C# is different
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomInt (min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-main();
+main()
