@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 
 namespace WishList
 {
@@ -22,12 +21,11 @@ namespace WishList
       };
 
       int NumOfInsults = insults.Count();
-      // Console.WriteLine(NumOfInsults);
 
       List<int> RandomInsultList = new List<int>();
 
       while (RandomInsultList.Count < 3) {
-        int insultRandom = new Random().Next(0, NumOfInsults -1);
+        int insultRandom = new Random().Next(0, NumOfInsults);
         if (!RandomInsultList.Contains(insultRandom)) {
           RandomInsultList.Add(insultRandom);
         }
