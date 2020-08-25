@@ -24,14 +24,17 @@ namespace WishList
 
       List<int> RandomInsultList = new List<int>();
 
-      while (RandomInsultList.Count < 3) {
+      while (RandomInsultList.Count < 3)
+      {
         int insultRandom = new Random().Next(0, NumOfInsults);
-        if (!RandomInsultList.Contains(insultRandom)) {
+        if (!RandomInsultList.Contains(insultRandom))
+        {
           RandomInsultList.Add(insultRandom);
         }
       }
 
-      for ( int i = 0; i < 3; i++ ) {
+      for ( int i = 0; i < 3; i++ )
+      {
         int index = RandomInsultList[i];
         Console.WriteLine(insults[index]);
       }
